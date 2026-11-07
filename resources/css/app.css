@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'IBM Plex Serif', ui-serif, Georgia, serif;
+    --color-hub-teal-50: #f0fdfa;
+    --color-hub-teal-100: #ccfbf1;
+    --color-hub-teal-500: #14b8a6;
+    --color-hub-teal-600: #0d9488;
+    --color-hub-teal-700: #0f766e;
+    --color-hub-slate-850: #0f172a;
+    --color-hub-slate-900: #020617;
+}
+
+@layer utilities {
+    .hero-grid {
+        background-image:
+            radial-gradient(circle at 20% 20%, rgb(20 184 166 / 0.12), transparent 45%),
+            radial-gradient(circle at 80% 0%, rgb(15 118 110 / 0.14), transparent 40%),
+            linear-gradient(180deg, rgb(248 250 252) 0%, rgb(241 245 249) 55%, rgb(248 250 252) 100%);
+    }
+
+    .fade-rise {
+        animation: fade-rise 0.8s ease both;
+    }
+
+    .fade-rise-delay {
+        animation: fade-rise 0.8s ease 0.15s both;
+    }
+}
+
+@keyframes fade-rise {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

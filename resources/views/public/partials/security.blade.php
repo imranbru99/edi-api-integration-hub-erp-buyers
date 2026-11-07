@@ -1,0 +1,1 @@
+<p>Credentials for ERP and partner connections are encrypted at rest. Tenant isolation is enforced at the ORM layer. Audit logs and login history support configurable retention aligned with <code>EDI_HUB_*_RETENTION_DAYS</code> settings.</p>

@@ -1,0 +1,56 @@
+<?php
+
+namespace App\Filament\App\Resources;
+
+use App\Filament\App\Resources\InvoiceResource\Pages;
+use App\Models\Invoice;
+use Filament\Forms;
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
+
+class InvoiceResource extends Resource
+{
+    protected static ?string $model = Invoice::class;
+
+    protected static ?string $navigationIcon = 'heroicon-o-banknotes';
+
+    protected static ?string $navigationLabel = 'Invoices';
+
+    public static function form(Form $form): Form
+    {
+        return $form->schema([
+            Forms\Components\TextInput::make('name')
+                ->visible(fn () => in_array('name', ['invoice_number', 'name'], true) || 'Invoice' !== 'WebhookEndpoint')
+                ->maxLength(255),
+        ]);
+    }
+
+    public static function table(Table $table): Table
+    {
+        return $table
+            ->columns([
+                Tables\Columns\TextColumn::make('invoice_number'),
+                Tables\Columns\TextColumn::make('status'),
+                Tables\Columns\TextColumn::make('total_amount'),
+                Tables\Columns\TextColumn::make('created_at')->dateTime()->sortable(),
+            ])
+            ->actions([
+                Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
+            ])
+            ->bulkActions([
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\DeleteBulkAction::make(),
+                ]),
+            ]);
+    }
+
+    public static function getPages(): array
+    {
+        return [
+            'index' => Pages\ManageInvoices::route('/'),
+        ];
+    }
+}

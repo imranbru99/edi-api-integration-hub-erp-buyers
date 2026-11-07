@@ -1,0 +1,1 @@
+<p>Sanctum tokens, scoped API clients, OpenAPI descriptions in <a href="{{ route('docs.show', 'api') }}">docs/API.md</a>, and a dedicated developer panel path (<code>/developer</code> when enabled) support integrators building custom connectors.</p>

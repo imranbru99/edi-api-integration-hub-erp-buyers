@@ -1,0 +1,1 @@
+<p>EDI Integration Hub connects manufacturer and exporter ERPs to retail buyer networks. The platform emphasizes canonical documents, observable pipelines, and honest labeling of mock versus production-ready ERP adapters.</p>

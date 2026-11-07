@@ -1,0 +1,1 @@
+<p>When buyers prefer JSON over AS2, the API hub accepts authenticated REST payloads and emits the same canonical documents as traditional EDI. Webhooks notify your ERP or middleware when status changes.</p>
