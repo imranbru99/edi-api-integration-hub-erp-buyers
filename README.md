@@ -2,8 +2,9 @@
   <img src="docs/screenshots/dashboard.svg" alt="EDI &amp; API Integration Hub preview" width="100%"/>
 </p>
 
-<h1 align="center">EDI & API Integration Hub</h1>
-<p align="center"><strong>Connect ERP with buyer systems, trading partners, ASN, invoices and B2B document flows</strong></p>
+# EDI & API Integration Hub
+
+<p align="center"><strong>Connect ERP with buyer systems and trading partners</strong></p>
 
 <p align="center">
   <a href="https://github.com/imranbru99/edi-api-integration-hub-erp-buyers"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-imranbru99%2Fedi-api-integration-hub-erp-buyers-0F172A?style=for-the-badge&logo=github"/></a>
@@ -13,105 +14,100 @@
 
 ---
 
-## README location
-
-This file is the project homepage README:
-
-**https://github.com/imranbru99/edi-api-integration-hub-erp-buyers/blob/main/README.md**
-
 ## Overview
 
-**EDI & API Integration Hub** is a Laravel SaaS platform that connects ERP systems with buyer/retailer networks using EDI-style document exchange and modern APIs. It helps buying houses, suppliers, 3PLs and brands exchange orders, ASN, invoices and inventory messages with full monitoring and auditability.
+**EDI & API Integration Hub** — Connect ERP with buyer systems and trading partners.
 
-## Product preview
+This README documents the **real application features** so GitHub and Google visitors can understand what the product does.
+
+## Product screenshots
 
 | Dashboard | Operations |
 | :---: | :---: |
 | ![Dashboard](docs/screenshots/dashboard.svg) | ![Operations](docs/screenshots/operations.svg) |
 
-## Complete features
+## Application features
 
-### Core integration platform
+### EDI & API integration hub
 
-- Multi-tenant EDI & API integration hub for ERP ↔ buyer / retailer systems
-- Trading partner onboarding, profiles, certificates and connection settings
-- Inbound and outbound document pipelines with status tracking
-- Message mapping, transformation and validation rules
-- Retry, replay, quarantine and error-handling queues
-- Audit trail for every transmission and transformation step
+- Trading partner onboarding and certificates
+- Inbound/outbound document pipelines
+- PO, ASN, invoice and inventory document types
+- Mapping / transformation / validation rules
+- Retry, replay, quarantine and error queues
+- REST APIs and webhooks for ERP middleware
+- Transmission monitoring and partner health
+- Full audit trail for every exchange
 
-### EDI / B2B document types
+### Detailed modules from product specification
 
-- Purchase orders and order acknowledgements
-- Advanced shipping notices (ASN)
-- Invoices and credit notes
-- Inventory advice / stock updates
-- Shipment and logistics status documents
-- Custom document types per trading partner
-
-### API & connectivity
-
-- REST API endpoints for ERP and middleware systems
-- Webhook subscriptions for document events
-- AS2 / SFTP / API connector patterns for partner exchange
-- API keys, scopes and rate limiting
-- Sandbox vs production connection profiles
-
-### Operations & monitoring
-
-- Live transmission dashboard and failure alerts
-- Partner health / connectivity monitoring
-- Document search, filters and payload inspection
-- Scheduled jobs for polling, cleanup and retries
-- Notification center for ops and partner contacts
-
-### Business & admin
-
-- Multi-branch / multi-company ready tenant model
-- Roles & permissions for integrators, ops and auditors
-- Filament admin resources for partners, documents and settings
-- Subscription / plan hooks for SaaS packaging
-- Multilingual and Unicode-ready document metadata
-
-### Act as a complete enterprise software development team consisting of
-
-- PRODUCT VISION
-- TECHNOLOGY STACK
-
-### Create the following modules
+- **Module architecture**
+- **Module behavior**
+#### Initial module catalog
 
 - CORE EDI GATEWAY
+- EDI STANDARDS AND DOCUMENT TYPES
 
-### When an invoice is approved
+- **ANSI X12**
+- **UN/EDIFACT**
+#### Additional data formats
 
+- EDI MAPPING STUDIO
+- TRADING PARTNER MANAGEMENT
+- COMMUNICATION PROTOCOLS
+
+- **SFTP**
+- **REST API**
+#### Additional communication methods
+
+- ERP INTEGRATION HUB
+- API MANAGEMENT CENTER
+- WEBHOOK MANAGEMENT
+- TRANSACTION MANAGEMENT AND MONITORING
+- BUSINESS WORKFLOW AUTOMATION
 - BUYER AND SUPPLIER PORTALS
-
-### Display all available modules with
-
+- INVENTORY AND PRODUCT CATALOG SYNCHRONIZATION
+- DOCUMENT MANAGEMENT AND ARCHIVING
+- CERTIFICATE AND SECURITY MANAGEMENT
+- AI-POWERED INTELLIGENCE
+- NOTIFICATION CENTER
+- REPORTING AND ANALYTICS
+- SUBSCRIPTION AND BILLING MANAGEMENT
+- PUBLIC WEBSITE AND MARKETING PAGES
+- Homepage
+- Features
+- EDI Gateway
+- EDI Standards
+- ERP Integrations
+- API Integration
 - Industry Solutions
+- Security
+- Developer Portal
+- Interactive Demo
+- Documentation
 
-### Admin panels (Filament resources)
+### Admin screens (Filament resources)
 
-- Api Client
-- Branch
-- Certificate
-- Edi Transaction
-- Integration Connection
-- Invoice
-- Mapping Profile
-- Module
-- Plan
-- Platform User
-- Product
-- Purchase Order
-- Shipment
-- Tenant
-- Trading Partner
-- Transaction Error
-- Webhook Endpoint
-- Workflow
+- Api Client management
+- Branch management
+- Certificate management
+- Edi Transaction management
+- Integration Connection management
+- Invoice management
+- Mapping Profile management
+- Module management
+- Plan management
+- Platform User management
+- Product management
+- Purchase Order management
+- Shipment management
+- Tenant management
+- Trading Partner management
+- Transaction Error management
+- Webhook Endpoint management
+- Workflow management
 
-### Domain models implemented
+### Domain data models
 
 - Ai Approval Record
 - Ai Conversation
@@ -163,15 +159,22 @@ This file is the project homepage README:
 - Partner Document Type
 - Partner Identifier
 - Plan
+- Product
+- Product Catalog
+- Purchase Order
+- Purchase Order Item
+- Shipment
 
 ## Tech stack
+
 - PHP 8.2+ / Laravel
-- Filament admin
-- Queues, migrations, seeders
-- Vite frontend assets
-- MySQL/SQLite ready
+- Filament admin (where enabled)
+- Migrations, seeders, queues
+- Vite asset pipeline
+- MySQL / SQLite ready
 
 ## Quick start
+
 ```bash
 git clone https://github.com/imranbru99/edi-api-integration-hub-erp-buyers.git
 cd edi-api-integration-hub-erp-buyers
@@ -184,13 +187,21 @@ php artisan serve
 ```
 
 ## Author
-**Imran Ahmed** · https://imrandev.bd · me@imrandev.bd
+
+**Imran Ahmed** · https://imrandev.bd · me@imrandev.bd  
+GitHub: https://github.com/imranbru99/edi-api-integration-hub-erp-buyers
 
 ---
 ## 🤝 Let's Connect & Collaborate
 
 I am open to **Senior Remote Full-Stack Roles**, AI Platform Architecture Contracts, and Enterprise Technical Advisory.
 
-**Timezone:** UTC+6 (Dhaka / Rangpur, Bangladesh)  
-**Website:** https://imrandev.bd · **Email:** me@imrandev.bd · **GitHub:** https://github.com/imranbru99
+| Channel | Link |
+| :--- | :--- |
+| Portfolio | https://imrandev.bd |
+| GitHub | https://github.com/imranbru99 |
+| LinkedIn | https://linkedin.com/in/imranbru99 |
+| Email | me@imrandev.bd |
+| WhatsApp | https://wa.me/8801576918420 |
+| Packagist | https://packagist.org/packages/imrandevbd/ |
 
